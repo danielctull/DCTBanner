@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BannerController" customModule="DCTBanner" customModuleProvider="target">
+            <connections>
+                <outlet property="messageLabel" destination="xlP-9d-pA6" id="4wf-uJ-TXS"/>
+                <outlet property="titleLabel" destination="bpA-L0-q8o" id="7ts-Ny-5xt"/>
+                <outlet property="view" destination="mPw-8k-HHo" id="Ol3-vt-Uut"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mPw-8k-HHo">
+            <rect key="frame" x="0.0" y="0.0" width="562" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlP-9d-pA6" userLabel="Message Label">
+                    <rect key="frame" x="10" y="30" width="542" height="17"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpA-L0-q8o" userLabel="Title Label">
+                    <rect key="frame" x="10" y="10" width="542" height="20"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bpA-L0-q8o" firstAttribute="top" secondItem="mPw-8k-HHo" secondAttribute="top" constant="10" id="BWv-jY-5jM"/>
+                <constraint firstAttribute="bottom" secondItem="xlP-9d-pA6" secondAttribute="bottom" constant="10" id="Dvt-Hk-xwT"/>
+                <constraint firstItem="bpA-L0-q8o" firstAttribute="leading" secondItem="mPw-8k-HHo" secondAttribute="leading" constant="10" id="Faj-DY-HWr"/>
+                <constraint firstItem="xlP-9d-pA6" firstAttribute="leading" secondItem="mPw-8k-HHo" secondAttribute="leading" constant="10" id="JOT-MS-dd6"/>
+                <constraint firstAttribute="trailing" secondItem="xlP-9d-pA6" secondAttribute="trailing" constant="10" id="hv4-PF-YFP"/>
+                <constraint firstAttribute="trailing" secondItem="bpA-L0-q8o" secondAttribute="trailing" constant="10" id="rne-AH-zlz"/>
+                <constraint firstItem="xlP-9d-pA6" firstAttribute="top" secondItem="bpA-L0-q8o" secondAttribute="bottom" id="xZA-Rh-zN2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="718" y="524.5"/>
+        </view>
+    </objects>
+</document>

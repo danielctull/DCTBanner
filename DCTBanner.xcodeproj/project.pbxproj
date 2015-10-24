@@ -15,6 +15,12 @@
 		24F4FA3E1BDB8E3000072302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24F4FA3C1BDB8E3000072302 /* LaunchScreen.storyboard */; };
 		24F4FA431BDB8F3200072302 /* DCTBanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F4FA111BDB8D5E00072302 /* DCTBanner.framework */; };
 		24F4FA441BDB8F3200072302 /* DCTBanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24F4FA111BDB8D5E00072302 /* DCTBanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24F4FA491BDB8FC500072302 /* BannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4FA481BDB8FC500072302 /* BannerController.swift */; };
+		24F4FA4B1BDB8FFB00072302 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4FA4A1BDB8FFB00072302 /* Banner.swift */; };
+		24F4FA4D1BDB92E300072302 /* AnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4FA4C1BDB92E300072302 /* AnimationController.swift */; };
+		24F4FA4F1BDB996E00072302 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4FA4E1BDB996E00072302 /* PresentationController.swift */; };
+		24F4FA511BDB9D9C00072302 /* BannerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24F4FA501BDB9D9C00072302 /* BannerController.xib */; };
+		24F4FA551BDBA3BD00072302 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24F4FA541BDBA3BD00072302 /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,12 @@
 		24F4FA3A1BDB8E3000072302 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24F4FA3D1BDB8E3000072302 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24F4FA3F1BDB8E3000072302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24F4FA481BDB8FC500072302 /* BannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BannerController.swift; sourceTree = "<group>"; };
+		24F4FA4A1BDB8FFB00072302 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		24F4FA4C1BDB92E300072302 /* AnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationController.swift; sourceTree = "<group>"; };
+		24F4FA4E1BDB996E00072302 /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		24F4FA501BDB9D9C00072302 /* BannerController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BannerController.xib; sourceTree = "<group>"; };
+		24F4FA541BDBA3BD00072302 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +124,13 @@
 			isa = PBXGroup;
 			children = (
 				24F4FA141BDB8D5E00072302 /* DCTBanner.h */,
+				24F4FA4A1BDB8FFB00072302 /* Banner.swift */,
+				24F4FA481BDB8FC500072302 /* BannerController.swift */,
+				24F4FA501BDB9D9C00072302 /* BannerController.xib */,
 				24F4FA161BDB8D5E00072302 /* Info.plist */,
+				24F4FA4C1BDB92E300072302 /* AnimationController.swift */,
+				24F4FA4E1BDB996E00072302 /* PresentationController.swift */,
+				24F4FA541BDBA3BD00072302 /* Timer.swift */,
 			);
 			path = DCTBanner;
 			sourceTree = "<group>";
@@ -246,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F4FA511BDB9D9C00072302 /* BannerController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +285,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F4FA4D1BDB92E300072302 /* AnimationController.swift in Sources */,
+				24F4FA491BDB8FC500072302 /* BannerController.swift in Sources */,
+				24F4FA551BDBA3BD00072302 /* Timer.swift in Sources */,
+				24F4FA4B1BDB8FFB00072302 /* Banner.swift in Sources */,
+				24F4FA4F1BDB996E00072302 /* PresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +362,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24F4FA201BDB8D9600072302 /* iOS Framework.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,6 +374,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24F4FA201BDB8D9600072302 /* iOS Framework.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -354,6 +385,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24F4FA1E1BDB8D9600072302 /* iOS Application.xcconfig */;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
 			name = Debug;
@@ -362,6 +394,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 24F4FA1E1BDB8D9600072302 /* iOS Application.xcconfig */;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 			};
 			name = Release;
@@ -385,6 +418,7 @@
 				24F4FA1B1BDB8D5E00072302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		24F4FA401BDB8E3000072302 /* Build configuration list for PBXNativeTarget "DCTBanner Demo" */ = {
 			isa = XCConfigurationList;
@@ -393,6 +427,7 @@
 				24F4FA421BDB8E3000072302 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
